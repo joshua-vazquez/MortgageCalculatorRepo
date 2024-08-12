@@ -16,6 +16,5 @@ jobs:
       uses: actions/checkout@v4.1.7
     - name: Build
       run: dotnet build --configuration Release
-      working-directory: C:\Users\jvazq\Desktop\MortgageCalculatorRepo\Mortgage_Calculator\Mortgage_Calculator\Mortgage_Calculator.csproj
     - name: Test
       run: dotnet test --configuration Release --no-build
