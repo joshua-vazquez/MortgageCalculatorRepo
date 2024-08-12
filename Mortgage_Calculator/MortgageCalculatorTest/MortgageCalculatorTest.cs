@@ -12,7 +12,8 @@ namespace MortgageCalculatorTest
             double amountLoaned = 100000;
             double interestRate = 5;
             double numberOfYears = 30;
-            var calculator = new MortgageCalculator(amountLoaned, interestRate, numberOfYears);
+            DateTime loanStartDate = DateTime.Now;
+            var calculator = new MortgageCalculator(amountLoaned, interestRate, numberOfYears, loanStartDate);
 
             // Act
             calculator.CalculateTotalMonthlyPayment();
